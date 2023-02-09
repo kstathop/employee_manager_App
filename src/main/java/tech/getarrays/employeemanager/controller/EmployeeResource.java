@@ -1,4 +1,4 @@
-package tech.getarrays.employeemanager;
+package tech.getarrays.employeemanager.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
