@@ -17,7 +17,14 @@ public class EmployeeService {
     public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
     }
-    public Employee addEmploye(Employee employee){
+
+    /**
+     * Add an employee.
+     *
+     * @param employee the employee to add
+     * @return an {@link Employee} object
+     */
+    public Employee addEmployee(Employee employee){
         employee.setEmployeeCode(UUID.randomUUID().toString());
         return employeeRepo.save(employee);
     }
